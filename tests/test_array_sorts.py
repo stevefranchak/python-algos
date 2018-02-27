@@ -1,10 +1,6 @@
 """Tests for the sorting algorithms implemented in sorter"""
-
-import os
-import sys
 import pytest
-sys.path.insert(1, os.path.join(sys.path[0], '..'))
-from sorter import bubble_sort, selection_sort, insertion_sort
+from src.array_sorts import bubble_sort, selection_sort, insertion_sort
 
 @pytest.mark.parametrize("func", [
     bubble_sort,
