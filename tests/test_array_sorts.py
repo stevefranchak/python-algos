@@ -1,4 +1,4 @@
-"""Tests for the sorting algorithms implemented in sorter"""
+"""Tests for the array sorting algorithms in array_sorts"""
 import pytest
 from src.array_sorts import bubble_sort, selection_sort, insertion_sort
 
@@ -19,6 +19,6 @@ from src.array_sorts import bubble_sort, selection_sort, insertion_sort
     ([-7, 8, -5, 0, 9, -5, -10, 1], [-10, -7, -5, -5, 0, 1, 8, 9])
 ])
 def test_sorter_functions(func, array_to_sort, expected_sorted_array):
-    """Test each sorting algorithm implementation against the same set
+    """Test each array sorting algorithm implementation against the same set
     of test parameters"""
     assert func(array_to_sort) == expected_sorted_array
